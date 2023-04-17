@@ -14,12 +14,17 @@
     <div class="searchArea">
         <input type="search" id="search" placeholder="Search Animals">
     </div>
+    <button id="add-animal-btn">Add Animals</button>
     <div class="animalCards" id="card-container"></div>
     <template id="animal-template">
         <div class="card">
-            <div class="specie" id="specie" data-specie></div>
-            <div class="food" data-food></div>
-            <div class="legs" data-legs></div>
+            <div class="specie" id="specie"></div>
+            <div class="food"></div>
+            <div class="legs"></div>
+            <div class="button-container">
+                <button class="update-button" id="update-button">Update</button>
+                <button class="delete-button">Delete</button>
+            </div>
         </div>
     </template>
     <script src="script.js"></script>
