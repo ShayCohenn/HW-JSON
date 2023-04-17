@@ -1,0 +1,28 @@
+{
+  "Animals": [
+    {
+      "id": 1,
+      "species": "lion",
+      "legs":4,
+      "food":"zebra"
+    },
+    {
+      "id": 2,
+      "species": "tiger",
+      "legs":4,
+      "food":"zebra"
+    },
+    {
+      "id": 3,
+      "species": "hippo",
+      "legs":4,
+      "food":"watermelon"
+    },
+    {
+      "id": 4,
+      "species": "zebra",
+      "legs":4,
+      "food":"grass"
+    }
+  ]
+}
