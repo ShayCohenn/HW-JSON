@@ -35,6 +35,18 @@
       "species": "Grizzly bear",
       "food": "Salmon fish",
       "legs": "4"
+    },
+    {
+      "id": 7,
+      "species": "Human",
+      "food": "Everything",
+      "legs": "2"
+    },
+    {
+      "species": "Cow ",
+      "food": "Grass",
+      "legs": "4",
+      "id": 8
     }
   ]
 }

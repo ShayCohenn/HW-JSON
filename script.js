@@ -19,8 +19,9 @@ axios.get("http://localhost:3000/Animals").then(res => {
         card.children[1].innerHTML = `favorite food: ${animal.food}`;
         card.children[2].innerHTML = `has ${animal.legs} legs`;
         cardContainer.append(card);
-        card.querySelector(".update-button").addEventListener("click", () => {
-            
+        card.querySelector(".delete-button").addEventListener("click", () => {
+            const confirmDeletion = confirm(`Are you sure you want to delete ${animal.species}?`);
+            confirmDeletion && axios.delete(`http://localhost:3000/Animals/${animal.id}`);
         });
         return { specie: animal.species, food: animal.food, legs: animal.legs, element: card };
     });
@@ -32,7 +33,6 @@ addAnimalBtn.addEventListener("click", () => {
     const food = prompt("Enter the food of the new animal");
     const legs = prompt("Enter the number of legs of the new animal");
     const newAnimal = {
-        id: animals.length + 1,
         species: species,
         food: food,
         legs: legs,
